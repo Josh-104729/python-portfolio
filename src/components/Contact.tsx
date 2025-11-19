@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, Github, Linkedin, Send, Download, Eye, FileText, X, Code2, MessageSquare } from 'lucide-react';
+import { Mail, Linkedin, Send, Download, Eye, FileText, X, Code2, MessageSquare } from 'lucide-react';
 import AnimatedCard from './AnimatedCard';
 import { Card, CardHeader, CardContent, CardFooter, CardTitle } from '@/components/ui/card';
 
@@ -14,14 +14,6 @@ const contactMethods = [
     value: 'akito.ito0204@gmail.com',
     href: 'mailto:akito.ito0204@gmail.com',
     bg: 'bg-blue-700',
-    iconColor: 'text-white',
-  },
-  {
-    icon: Github,
-    label: 'GitHub',
-    value: 'github.com/sam-sarang',
-    href: 'https://github.com/sam-sarang',
-    bg: 'bg-gray-700',
     iconColor: 'text-white',
   },
   {

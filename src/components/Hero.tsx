@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from "@/components/ui/button";
 import AnimatedText from './AnimatedText';
-import { Github, Linkedin, Eye, FileText, X, Download } from 'lucide-react';
+import { Linkedin, Eye, FileText, X, Download } from 'lucide-react';
 
 const Hero = () => {
   const handleResumeView = () => {
@@ -30,7 +30,7 @@ const Hero = () => {
             <span className="block mt-2 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">I design and develop high-performance web applications.</span>
           </motion.h1>
           
-          <motion.h2 
+          {/* <motion.h2 
             className="text-lg md:text-xl text-gray-400 mb-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -46,7 +46,7 @@ const Hero = () => {
               ]} 
               className="text-blue-400 font-medium" 
             />
-          </motion.h2>
+          </motion.h2> */}
           
           <motion.p 
             className="text-md mb-10 text-gray-500"
@@ -64,12 +64,6 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.5 }}
           >
-            <a href="https://github.com/sam-sarang" target="_blank" rel="noopener noreferrer" className="group">
-              <div className="relative p-3 rounded-xl bg-black/40 backdrop-blur-sm border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)] group-hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 via-blue-600/10 to-purple-600/0 rounded-xl blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 scale-150 group-hover:scale-100"></div>
-                <Github className="w-6 h-6 relative z-10 text-white group-hover:text-blue-400 transition-colors duration-300" />
-              </div>
-            </a>
             <a href="https://linkedin.com/in/akito-ito" target="_blank" rel="noopener noreferrer" className="group">
               <div className="relative p-3 rounded-xl bg-black/40 backdrop-blur-sm border border-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.1)] group-hover:shadow-[0_0_30px_rgba(59,130,246,0.3)] transition-all duration-300">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 via-blue-600/10 to-purple-600/0 rounded-xl blur-3xl opacity-0 group-hover:opacity-100 transition-all duration-500 scale-150 group-hover:scale-100"></div>

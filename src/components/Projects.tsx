@@ -14,7 +14,6 @@ const projectsData: Project[] = [
     image: "/lovable-uploads/CapitalOne.png",
     tags: ["Django", "Python", "React", "Redux Toolkit", "TypeScript", "Tailwind CSS", "PostgreSQL", "AWS"],
     demoUrl: "https://emp-hub.netlify.app/",
-    githubUrl: "https://github.com/kalpsenghani/Employee-Management-System"
   },
   {
     id: 2,
@@ -23,7 +22,6 @@ const projectsData: Project[] = [
     image: "/lovable-uploads/Avanade.png",
     tags: ["FastAPI", "Python", "React", "TypeScript", "Material UI", "Azure OpenAI", "LangChain"],
     demoUrl: "https://spacexlabtest2.netlify.app/",
-    githubUrl: "https://github.com/kalpsenghani/SpaceX_API"
   },
   {
     id: 3,
@@ -32,7 +30,6 @@ const projectsData: Project[] = [
     image: "/lovable-uploads/LoneStarAnalysis.png",
     tags: ["Django", "Python", "React", "Vue", "PostgreSQL", "Azure"],
     demoUrl: "https://example.com/ecommerce-demo",
-    githubUrl: "https://github.com/example/ecommerce-platform"
   },
   {
     id: 4,
@@ -41,7 +38,6 @@ const projectsData: Project[] = [
     image: "/lovable-uploads/AuctionSoftware.png",
     tags: ["Django", "Python", "React", "MySQL", "MongoDB"],
     demoUrl: "https://example.com/ecommerce-demo",
-    githubUrl: "https://github.com/example/ecommerce-platform"
   },
   {
     id: 5,
@@ -50,7 +46,6 @@ const projectsData: Project[] = [
     image: "/lovable-uploads/crypto.png",
     tags: ["React.js", "Tailwind CSS", "Recharts", "Axios", "SWR", "Zustand", "FastAPI", "MongoDB", "Python"],
     demoUrl: "https://crypto-analytics-frontend.onrender.com/", // Replace with actual live link if available
-    githubUrl: "https://github.com/sam-sarang/crypto-analytics-dashboard"
   },
   {
     id: 6,
@@ -59,7 +54,6 @@ const projectsData: Project[] = [
     image: "/lovable-uploads/Portfolio.png",
     tags: ["React", "Next.js", "Tailwind CSS", "JS", "Node.js", "Express.js", "Next-Auth", "Context API", "Mongo"],
     demoUrl: "https://kalpsenghani1.netlify.app/",
-    githubUrl: "https://github.com/kalpsenghani/portfolio-admin-dashboard"
   },
 ];
 

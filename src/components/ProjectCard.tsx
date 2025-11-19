@@ -11,7 +11,6 @@ export interface Project {
   image: string;
   tags: string[];
   demoUrl?: string;
-  githubUrl?: string;
   status?: string;
   statusColor?: string;
   statusGlow?: string;
@@ -79,28 +78,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
             {project.description}
           </CardDescription>
         </CardContent>
-        
-        {/* <CardFooter className="flex justify-between gap-4 pt-2">
-          {project.demoUrl && (
-            <Button asChild className={`w-full px-8 py-2 rounded-full ${
-              project.status 
-                ? project.statusColor || '' 
-                : 'bg-gradient-to-b from-blue-500 to-blue-600 hover:from-blue-400 hover:to-blue-500 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200'
-            }`}>
-              <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
-                {project.status ? project.status : 'Live Demo'}
-              </a>
-            </Button>
-          )}
-          
-          {project.githubUrl && (
-            <Button asChild className="w-full px-8 py-2 rounded-full bg-gradient-to-b from-gray-800 to-gray-900 hover:from-gray-700 hover:to-gray-800 text-white focus:ring-2 focus:ring-gray-400 hover:shadow-xl transition duration-200">
-              <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                GitHub
-              </a>
-            </Button>
-          )}
-        </CardFooter> */}
       </Card>
     </motion.div>
   );

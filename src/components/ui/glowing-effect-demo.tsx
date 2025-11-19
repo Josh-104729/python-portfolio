@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Box, Lock, Search, Settings, Sparkles, Github, ExternalLink } from "lucide-react";
+import { Box, Lock, Search, Settings, Sparkles, ExternalLink } from "lucide-react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 
 // Tech icon mapping (from Technologies.tsx)
@@ -68,7 +68,6 @@ const microProjectsData = [
     image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     tags: ["AI", "React", "Node.js", "NLP", "Machine Learning"],
     demoUrl: "https://example.com/demo1",
-    githubUrl: "https://github.com/kalpsenghani/ai-task-manager"
   },
   {
     title: "EventRaze",
@@ -76,7 +75,6 @@ const microProjectsData = [
     image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     tags: ["PHP", "Postgres", "HTML", "CSS", "JavaScript", "XAMPP"],
     demoUrl: undefined,
-    githubUrl: "https://github.com/kalpsenghani/EventRaze"
   },
   {
     title: "Weather Forecast",
@@ -84,7 +82,6 @@ const microProjectsData = [
     image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     tags: ["React", "OpenWeatherMap API", "CSS", "Weather API", "Forecast"],
     demoUrl: "https://weather-app-kalpsenghani.netlify.app/",
-    githubUrl: "https://github.com/kalpsenghani/Weather-App"
   },
   {
     title: "YouTube Short VS Long Analyzer",
@@ -92,7 +89,6 @@ const microProjectsData = [
     image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80",
     tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Radix UI", "React Query", "React Router", "Framer Motion", "Recharts"],
     demoUrl: undefined,
-    githubUrl: "https://github.com/kalpsenghani/YT_Analyzer"
   },
   {
     title: "Pomodoro Timer",
@@ -100,7 +96,6 @@ const microProjectsData = [
     image: "https://images.unsplash.com/photo-1501139083538-0139583c060f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     tags: ["React", "Timer", "Productivity", "Stats"],
     demoUrl: "https://pomo-focus-eta.vercel.app/",
-    githubUrl: "https://github.com/kalpsenghani/PomoFocus"
   },
   {
     title: "AI Job Advisor",
@@ -108,7 +103,6 @@ const microProjectsData = [
     image: "/lovable-uploads/Job-Advisor.png",
     tags: ["Axios", "OpenAI GPT-4", "React", "Node.js"],
     demoUrl: "https://yourjobadvisor.netlify.app/",
-    githubUrl: "https://github.com/kalpsenghani/AI_Job_Advisor"
   }
 ].filter(project => project.title !== "AI Content Platform");
 
@@ -131,7 +125,6 @@ interface Project {
   image: string;
   tags: string[];
   demoUrl?: string;
-  githubUrl?: string;
 }
 
 interface GridItemProps {
@@ -189,19 +182,7 @@ const GridItem = ({ project }: GridItemProps) => {
               ))}
             </div>
           </div>
-          {/* GitHub and Live buttons */}
           <div className="flex flex-row items-center justify-end gap-2 mt-auto">
-            {project.githubUrl && (
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 flex items-center justify-center rounded-full bg-black/70 border border-white/20 hover:bg-gray-900 hover:border-blue-400 transition-colors"
-                title="View on GitHub"
-              >
-                <Github className="w-5 h-5 text-white" />
-              </a>
-            )}
             {project.demoUrl && (
               <a
                 href={project.demoUrl}
